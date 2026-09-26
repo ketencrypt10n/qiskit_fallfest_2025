@@ -35,26 +35,7 @@ Simulations of the two foundational Quantum Key Distribution protocols, **BB84**
 - [qiskit-ibm-runtime](https://pypi.org/project/qiskit-ibm-runtime/)
 - `numpy`, `matplotlib`
 
-Install everything with:
-
-```bash
-pip install qiskit qiskit-aer qiskit-ibm-runtime numpy matplotlib
-```
-
-(The first cell of each notebook also runs this install command directly.)
-
-## Usage
-
-1. Clone this repository and open either notebook in Jupyter, JupyterLab, Google Colab, or VS Code.
-2. Run all cells from top to bottom.
-3. In `QKD_BB84_QuantaNova.ipynb`, adjust `n_qubits`, `test_fraction`, and `with_eve` to explore different scenarios.
-4. In `QuantaNova_E91.ipynb`, adjust the parameters of `run_e91_protocol()` (`n_pairs`, `eve_attack`, `eve_probability`, `noise_enabled`, gate/readout error rates) to explore different scenarios.
-5. Review the printed summaries (sifted key length, estimated QBER, CHSH value, Bell-violation status) and generated plots.
 
 ## Reference
 
 `Quantum_Key_Distribution.pdf` — background slides on QKD as a response to the threat quantum computers pose to classical cryptography, and a walkthrough of the BB84 protocol stages: quantum communication, sifting, QBER estimation, error reconciliation, and privacy amplification.
-
-## License
-
-Add a license of your choice (e.g., MIT) before publishing this repository publicly.
